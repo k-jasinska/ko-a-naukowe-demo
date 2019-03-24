@@ -1,3 +1,3 @@
-# ko-a-naukowe-demo
+# kola-naukowe-demo
 
-[Demo](https://k-jasinska.github.io/ko-a-naukowe-demo)
+[Demo](https://k-jasinska.github.io/kola-naukowe-demo)
