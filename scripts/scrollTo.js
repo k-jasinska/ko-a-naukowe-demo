@@ -21,7 +21,7 @@
         $("#link4").click(function (e) {
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: $(".wrappContact").offset().top
+                scrollTop: $(".contactHeader").offset().top - 40
             }, 500);
         });
     });
