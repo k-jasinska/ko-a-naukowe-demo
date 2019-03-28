@@ -1,6 +1,6 @@
 (function () {
     $(document).ready(function () {
-        $("#link1").click(function (e) {
+        $(".navbar-brand").click(function (e) {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: $("html").offset().top

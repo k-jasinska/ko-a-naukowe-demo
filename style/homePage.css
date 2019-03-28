@@ -6,6 +6,30 @@ body,
     font-family: "Releway", Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+.row {
+    margin: 0 0;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(14, 10, 10);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(148, 21, 80);
+}
+
+/* SLIDER */
 #slideshow {
     width: 100%;
     height: 70vh;
@@ -34,14 +58,13 @@ slider>* {
 
 slide:nth-child(1) {
     left: 0%;
-    animation-delay: -2s;
     background-image: url(../img/1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 slide:nth-child(2) {
-    animation-delay: 2s;
+    animation-delay: 4s;
     background-image: url(../img/3.jpg);
     background-size: cover;
     background-position: center;
@@ -49,7 +72,7 @@ slide:nth-child(2) {
 
 slide:nth-child(3) {
     left: 0%;
-    animation-delay: 6s;
+    animation-delay: 8s;
     background-image: url(../img/2.jpg);
     background-size: cover;
     background-position: center;
@@ -86,107 +109,7 @@ slide:nth-child(3) {
     }
 }
 
-.row {
-    margin: 0 0;
-}
-
-
-.wrapper {
-    overflow: hidden;
-    margin: 0 auto;
-    z-index: 2;
-    margin-top: 70vh;
-    margin-bottom: 0;
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: rgb(20, 20, 20);
-    /* background: linear-gradient(to right, rgb(245, 244, 244) 0%, rgb(97, 108, 133) 100%); */
-}
-
-.navbar {
-    background-color: rgb(14, 10, 10);
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    border-bottom: 1px solid rgb(148, 21, 80);
-}
-
-.description {
-    min-height: 30vh;
-    font-size: 24px;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    position: relative;
-}
-
-.description div {
-    color: rgb(148, 21, 63);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    font-style: oblique;
-}
-
-.footer {
-    text-align: center;
-    color: #656669;
-    width: 100%;
-    background-color: #000;
-    padding: 10px;
-    font-size: 15px;
-}
-
-h3 {
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-    padding-top: 35px;
-    text-align: center;
-}
-
-.underline {
-    width: 30px;
-    margin: 4px auto auto;
-    border-bottom: 2px solid;
-    display: block;
-}
-
-
-.news {
-    background-color: rgb(37, 37, 37);
-    box-shadow: black 5px;
-    border-radius: 10px;
-    margin: 20px 20px;
-    color: #656669;
-    box-shadow: 0px 0px 35px -5px rgba(0, 0, 0, 0.75);
-    padding: 15px;
-    position: relative;
-    min-width: 350px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-
-.pinkbtn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: rgb(148, 21, 80);
-    border: 2px rgb(148, 21, 80) solid;
-    border-radius: 0;
-}
-
-.pinkbtn:hover {
-    background-color: rgb(116, 16, 63);
-    border-color: rgb(116, 16, 63);
-}
-
-
+/* LOGO */
 .logo {
     position: absolute;
     top: 20vh;
@@ -194,9 +117,9 @@ h3 {
     z-index: 3;
     text-transform: uppercase;
     color: white;
-    background-color: rgba(228, 228, 228, 0.377);
+    background-color: rgba(7, 7, 7, 0.384);
     padding: 10px 15px;
-    animation: text 12s infinite;
+    animation: logo 12s infinite;
     opacity: 0;
 }
 
@@ -208,7 +131,7 @@ h3 {
     animation-delay: 8s;
 }
 
-@keyframes text {
+@keyframes logo {
     0% {
         opacity: 0;
     }
@@ -238,6 +161,91 @@ h3 {
     }
 }
 
+/* CONTENT */
+.wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 2;
+    margin-top: 70vh;
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(20, 20, 20);
+
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.description {
+    min-height: 30vh;
+    font-size: 24px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.description>div {
+    color: rgb(157, 176, 179);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-style: oblique;
+}
+
+h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.underline {
+    width: 30px;
+    margin: 4px auto auto;
+    border-bottom: 2px solid;
+    display: block;
+}
+
+.news {
+    background-color: rgb(37, 37, 37);
+    box-shadow: black 5px;
+    border-radius: 10px;
+    margin: 20px 20px;
+    color: #656669;
+    box-shadow: 0px 0px 35px -5px rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    position: relative;
+    min-width: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pinkbtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: rgb(148, 21, 80);
+    border: 2px rgb(148, 21, 80) solid;
+    border-radius: 0;
+}
+
+.pinkbtn:hover {
+    background-color: rgb(116, 16, 63);
+    border-color: rgb(116, 16, 63);
+}
+
+.group {
+    margin: 0 20px;
+}
+
 .group-title {
     width: 100%;
     min-height: 50px;
@@ -247,33 +255,25 @@ h3 {
     margin-top: 5px;
 }
 
-.group-title h4 {
+.group-title>h4 {
     color: rgb(167, 165, 165);
     transition: all 0.2s;
 }
 
 .group-title:hover>h4 {
-    color: rgb(248, 248, 248);
+    color: rgb(224, 240, 198);
     padding-left: 30px;
+}
+
+.group-clicked>h4 {
+    color: rgb(224, 240, 198);
 }
 
 .group-descr {
     display: none;
-    /*  przez to nie dziąła mi grid */
     padding: 15px 15px;
     background-color: #3c3c3b;
     color: #dbdada;
-}
-
-.cookie-msg {
-    background: linear-gradient(to bottom, rgba(167, 166, 166, 0.801) 0%, rgba(0, 0, 0, .95) 100%);
-    position: fixed;
-    height: 60px;
-    z-index: 4;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    transform: translateY(100%);
 }
 
 .video-responsive {
@@ -284,7 +284,7 @@ h3 {
     box-sizing: border-box;
 }
 
-.video-responsive iframe {
+.video-responsive>iframe {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -295,86 +295,18 @@ h3 {
     max-height: 449px;
 }
 
-
-.cookie-msg.active {
-    transform: none;
-}
-
-p {
-    padding-bottom: 10px;
-}
-
-@media(max-width:900px) {
-    .description {
-        font-size: 22px;
-        width: 80%;
-    }
-}
-
-@media(max-width:750px) {
-    .slick img {
-        width: auto;
-        height: 70vh;
-        /* min-height: 70vh; */
-        /* min-width: 100%; */
-        /* min-width: auto; */
-        /* max-width: 110vw; */
-    }
-
-    .news {
-        min-width: 100%;
-        margin: 10px 0px;
-    }
-
-    .description {
-        font-size: 16px;
-        width: 80%;
-    }
-
-    .wrapper {
-        padding: 0 15px 15px 15px;
-    }
-
-}
-
-
-
-@media(min-width:1000px) {
-    .news {
-        min-width: 450px;
-    }
-}
-
-
-@media(min-width:798px) {
-    .video-responsive {
-        padding-bottom: 0px;
-        min-height: 500px;
-    }
-}
-
-@media(min-height:853px) {
-    .slick img {
-        min-height: 70vh;
-    }
-}
-
-
-
-
 /* KONTAKT */
 .wrappContact {
     width: 100%;
     background-color: rgb(37, 37, 37);
     background: linear-gradient(145deg, rgb(37, 37, 37) 0%, rgb(54, 64, 88) 100%);
-    /* background-color: #3c3c3b; */
     padding: 10px 20px;
     border-right: 1px solid #272727;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.wrappContact p {
+.wrappContact>p {
     font-size: 20px;
     margin-top: 20px;
 }
@@ -413,11 +345,51 @@ textarea {
     border-bottom: 1px solid rgb(110, 156, 58);
 }
 
-/* 
+.footer {
+    text-align: center;
+    color: #656669;
+    width: 100%;
+    background-color: #000;
+    padding: 10px;
+    font-size: 15px;
+}
 
-#horizontal {
-    height: 200px;
-    float: left;
-    border: 2px solid black;
-    position: absolute;
-} */
+@media(max-width:900px) {
+    .description {
+        font-size: 22px;
+        width: 80%;
+    }
+}
+
+@media(max-width:750px) {
+    .news {
+        min-width: 100%;
+        margin: 10px 0px;
+    }
+
+    .group {
+        margin: 0 0;
+    }
+
+    .description {
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .wrapper {
+        padding: 0 15px 15px 15px;
+    }
+}
+
+@media(min-width:1000px) {
+    .news {
+        min-width: 450px;
+    }
+}
+
+@media(min-width:798px) {
+    .video-responsive {
+        padding-bottom: 0px;
+        min-height: 500px;
+    }
+}

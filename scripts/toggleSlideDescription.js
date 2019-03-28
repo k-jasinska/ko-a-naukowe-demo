@@ -3,8 +3,8 @@
 
     groups.forEach((group) => {
         group.addEventListener('click', function (e) {
-            $(this).next('.group-descr').slideToggle(300);
+            $(this).toggleClass("group-clicked");
+            $(this).next('.group-descr').stop().slideToggle(300);
         });
     });
-    //     $('.group-descr').stop().slideToggle(300);
 })();
